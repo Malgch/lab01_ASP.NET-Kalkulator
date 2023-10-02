@@ -1,0 +1,15 @@
+﻿@model Kalkulator.Models.Calculator
+@{
+    ViewData["Title"] = "Formularz urodziny";
+}
+<h1>Kalkulator</h1>
+<p>Wybierz znak działania +, -, *, /</p>
+
+<form action="Calculator">
+    <input type="number" asp-for="PierwszaLiczba" /> PierwszaLiczba<br>
+    <input type="text" asp-for="ZnakDzialania" /> Znak dzialania<br>
+    <input type="number" asp-for="DrugaLiczba" /> Druga Liczba<br>
+    </><input type="submit" /><br>
+</form>
+<p></p>
+@ViewBag.wynik
